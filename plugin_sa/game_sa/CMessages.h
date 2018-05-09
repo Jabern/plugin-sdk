@@ -75,6 +75,8 @@ public:
 	static void AddMessageWithNumber(char *text, unsigned int time, unsigned short flag, int n1, int n2, int n3, int n4, int n5, int n6, bool bPreviousBrief);
 	// Adds message with numbers and shows it instantly
 	static void AddMessageJumpQWithNumber(char *text, unsigned int time, unsigned short flag, int n1, int n2, int n3, int n4, int n5, int n6, bool bPreviousBrief);
+	void AddBigMessageWithNumber(char * text, unsigned int time, eMessageStyle style, int n1, int n2, int n3, int n4, int n5, int n6);
+	void AddBigMessageWithNumberQ(char * text, unsigned int time, eMessageStyle style, int n1, int n2, int n3, int n4, int n5, int n6);
 	// Adds big message with numbers and shows it instantly
 	static void AddBigMessageWithNumber(char *text, unsigned int time, unsigned short style, int n1, int n2, int n3, int n4, int n5, int n6);
 	// Adds big message with numbers to queue
@@ -101,6 +103,8 @@ public:
 	static void AddMessage(char *text, unsigned int time, unsigned short flag, bool bPreviousBrief);
 	// Adds message and shows it instantly
 	static void AddMessageJumpQ(char *text, unsigned int time, unsigned short flag, bool bPreviousBrief);
+	void AddBigMessage(char * text, unsigned int time, eMessageStyle style);
+	void AddBigMessageQ(char * text, unsigned int time, eMessageStyle style);
 	// Adds big message and shows it instantly
 	static void AddBigMessage(char *text, unsigned int time, unsigned short style);
 	// Adds big message to queue
